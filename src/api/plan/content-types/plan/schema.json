@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "plan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "size": {
+      "type": "decimal",
+      "default": 0,
+      "required": true,
+      "max": 10000
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "bathroom": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "bedroom": {
+      "type": "integer",
+      "required": true
+    },
+    "garage": {
+      "type": "integer",
+      "required": true
+    },
+    "floorPlan": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
